@@ -8,18 +8,15 @@ export default {
        data: function() {
            return {
                myName: this.item.name,
-               MyRole: this.item.role,
-               program: "IDP"
+               Company: "Mini Cooper"
            }
        },
 
         template: `<li @click="logClicked">
             <img :src="'images/' + item.picture" :alt='item.name + " image"'>
-            <p>Prof Name: {{ item.name }}</p>
+            <h2>Model: {{ item.name }}</h2>
     
-            <a href="" class="remove-prof"> Show {{ item.name }}'s info</a>
     
-             <a href="" class="remove-prof">Remove {{ item.name }}</a>
     
           </li>`,
     
