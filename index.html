@@ -42,7 +42,8 @@
      
 
      <!-- show the prof data in collection -->
-     <ul>
+     <section class="lineUp"><h3>Our Line Up</h3>
+     <ul class="cars">
          
          <!-- this is a custom Vue component defined in main.js -->
           <prof-card @showmydata="showItemData" v-for="item in professors" :item="item" :key="item.id"></prof-card>
@@ -60,11 +61,14 @@
      <section class="bio-data" :class="{'show-bio': showBioData}">
         <h1>{{ currentProfData.name }}</h1>
         <p> {{ currentProfData.about }}</p> 
-        <!-- <img :src="`currentProfData.picture`" alt=""> -->
+        <img :src='"images/" + currentProfData.picture'></img>
+       
         <!-- <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        -->
 
      </section>
+
+     <section class="secImg"><img src="images/mini_below.jpg" alt=""></section>
     </main>   
 </body>
 <script src="js/main.js" type="module"> </script>
