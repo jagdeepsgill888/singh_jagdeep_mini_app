@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main id="app">
+     <h1 @click="clickHeader">{{ message }}</h1>
+     <p>{{ aontherMessage }}</p>
+     <span></span>
+
+
+     <!-- this is a custom Vue component defined in main.js -->
+     <!-- <prof-card></prof-card> -->
+     
+
+     <!-- show the prof data in collection -->
+     <ul>
+         
+         <!-- this is a custom Vue component defined in main.js -->
+          <prof-card @showmydata="showItemData" v-for="item in professors" :item="item" :key="item.id"></prof-card>
+
+         <!-- <li v-for="item, index in professors">
+             <p>Prof Name: {{ item.name }}, Role: {{ item.role }}</p>
+
+             <a href="" class="remove-prof" @click.prevent="showItemData(item)" v-bind:class="{'prof-button-modifier' : removeAformat}">show {{ item.name }}'s info</a>
+
+             <a href="" class="remove-prof" @click.prevent="removeItem(index)" v-bind:class="{'prof-button-modifier' : removeAformat}">Remove {{ item.name }}'s info</a>
+
+         </li> -->
+     </ul>
+
+     <section class="bio-data" :class="{'show-bio': showBioData}">
+        <h1>{{ currentProfData.name }}</h1>
+        <p> {{ currentProfData.nickname }}</p> 
+         <p>dfsd sdfsdfsd egdfdf fdfsdfsdfsd sdfsdfsdf sdsdgsdgdsg sdgsdgsdg</p> 
+     </section>
+    </main>   
+</body>
+<script src="js/main.js" type="module"> </script>
+</html>
