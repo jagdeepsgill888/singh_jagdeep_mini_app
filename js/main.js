@@ -22,6 +22,10 @@ import ProfCard from "./components/TheProfCard.js";
 // });
 
 
+
+
+
+
 // const myVM = ( () => {
     let vue_vm = new Vue({
         // link Vue to an element in our HTML
@@ -82,6 +86,7 @@ import ProfCard from "./components/TheProfCard.js";
 
                 // make the selected prof's data visable
                 this.currentProfData = target;
+                // this.currentProfData.iframe.src = currentProfData.youtubeid;
             },
 
             removeItem(target) {

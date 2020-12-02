@@ -14,7 +14,7 @@ export default {
        },
 
         template: `<li @click="logClicked">
-            <img :src="'images/' + item.avatar" :alt='item.name + " image"'>
+            <img :src="'images/' + item.picture" :alt='item.name + " image"'>
             <p>Prof Name: {{ item.name }}</p>
     
             <a href="" class="remove-prof"> Show {{ item.name }}'s info</a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with Vue</title>
+    <title>Mini Cooper App</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -37,8 +37,12 @@
 
      <section class="bio-data" :class="{'show-bio': showBioData}">
         <h1>{{ currentProfData.name }}</h1>
-        <p> {{ currentProfData.nickname }}</p> 
-         <p>dfsd sdfsdfsd egdfdf fdfsdfsdfsd sdfsdfsdf sdsdgsdgdsg sdgsdgsdg</p> 
+        <p> {{ currentProfData.about }}</p> 
+        <!-- <img :src="`currentProfData.picture`" alt=""> -->
+        <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
+        :src="currentProfData.youtubeid"autoplay="1"frameborder="0"></iframe> -->
+
      </section>
     </main>   
 </body>
