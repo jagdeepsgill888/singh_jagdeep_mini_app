@@ -10,12 +10,31 @@
 </head>
 <body>
     <main id="app">
-     <h1 @click="clickHeader">{{ message }}</h1>
+     <!-- <h1 @click="clickHeader">{{ message }}</h1>
      <p>{{ aontherMessage }}</p>
-     <span></span>
+     <span></span> -->
+     
+     <header id="mainHeader">
+        <!-- <div id="logo"><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></div> -->
+        <section>
+            <iframe width="1392" height="500" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
 
-     <!-- <section>
-        <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <div id="menuToggle"><button></button></div>
+        <nav id="mainNav"><h2 class="hidden">Main Navigation</h2>
+          <ul>
+            <li><a href="index.html">Models</a></li>
+             <li><a href="about.html">Tools</a></li>
+             <li><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></li>
+             <li><a href="project.html">Discover</a></li>
+             <li><a href="contact.html">Contact</a></li>
+          </ul></nav>
+
+    
+       </header>
+<!-- 
+       <section>
+        <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section> -->
+
 
 
      <!-- this is a custom Vue component defined in main.js -->

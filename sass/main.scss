@@ -1,4 +1,10 @@
-@import "components/_profsection";
+@import "components/_profsection.scss";
+@import "components/_nav.scss";
+
+#siteContainer {
+  margin: 0 auto;
+  max-width: 1080px;
+}
 
 .prof-button-modifier {
   text-decoration: none;
@@ -19,3 +25,11 @@ ul {
 li {
   list-style-type: none;
 }
+
+.hidden {
+  display: none;
+}
+
+// iframe {
+//   width: 1392px;
+// }
