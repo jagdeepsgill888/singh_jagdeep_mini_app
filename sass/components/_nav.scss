@@ -133,6 +133,7 @@
     width: 100%;
     position: relative;
     background: url(../images/hero_desktop.jpg) center no-repeat;
+    height: 450px;
   }
   //   #logo {
   //     position: absolute;
@@ -161,5 +162,7 @@
   section {
     position: relative;
     z-index: 0;
+    margin-left: 33%;
+    margin-top: 8%;
   }
 }
