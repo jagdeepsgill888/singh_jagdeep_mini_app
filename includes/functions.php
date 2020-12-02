@@ -5,7 +5,7 @@
 
   function getAllUsers($conn)
   {
-      $query = "SELECT * FROM profdata";
+      $query = "SELECT * FROM tbl_cars";
 
       $runQuery = $conn->query($query);
   
@@ -20,7 +20,7 @@
   //get a specific user
   function getSingleUser($conn, $id)
   {
-      $query = "SELECT * FROM profdata WHERE id=" . $id . "";
+      $query = "SELECT * FROM tbl_cars WHERE id=" . $id . "";
       $runQuery = $conn->query($query);//was pdo ,worked on postman was some reason
   
       while ($row = $runQuery->fetchAll(PDO::FETCH_ASSOC)) {
