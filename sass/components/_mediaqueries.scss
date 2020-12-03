@@ -19,8 +19,23 @@
     padding-left: 46%;
   }
 
-  .cars {
+  ul.cars {
     padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "child1 child2 child3";
+
+    :nth-child(1) {
+      grid-area: child1;
+    }
+    :nth-child(2) {
+      grid-area: child2;
+    }
+    :nth-child(3) {
+      grid-area: child3;
+    }
   }
 
   .carThumb {
@@ -69,5 +84,11 @@
     background: black;
     height: 20px;
     width: 1024px;
+  }
+
+  #secImg {
+    background: url(../images/mini_below.jpg) center no-repeat;
+    height: 300px;
+    width: 100%;
   }
 }

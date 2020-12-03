@@ -1,6 +1,5 @@
 @import "components/_profsection.scss";
 @import "components/_nav.scss";
-@import "components/_mediaqueries.scss";
 
 #siteContainer {
   margin: 0 auto;
@@ -46,66 +45,23 @@ h3 {
   min-width: 375px;
 }
 
-// iframe {
-//   width: 200px;
-// }
+ul.cars {
+  display: grid;
+}
 
-// .cars ul {
-//   li {
-//     padding-right: 60px;
-//   }
-// }
+.carThumb {
+  width: 340px;
+  height: 120px;
+  // padding: 40px;
+}
 
-// @media screen and (min-width: 58em) {
-//   .lineUp h3 {
-//     padding-left: 46%;
-//   }
+.secImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: url(../images/mini_below.jpg) center no-repeat;
+  min-height: 300px;
+  min-width: 375px;
+}
 
-//   .cars {
-//     padding-left: 150px;
-//   }
-
-//   .carThumb {
-//     width: 290px;
-//     height: 145px;
-//     padding: 40px;
-//   }
-
-//   section.secImg img {
-//     width: 1376px;
-//     height: 370px;
-//     margin-left: 60px;
-//   }
-
-//   .bioGrid {
-//     display: grid;
-//     margin-left: 25%;
-
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr;
-//     gap: 0px 0px;
-//     grid-template-areas:
-//       "h1 img img"
-//       "p img img";
-
-//     img {
-//       grid-area: img;
-//       margin-top: 40px;
-//     }
-//     h1 {
-//       grid-area: h1;
-//       color: salmon;
-//     }
-//     p {
-//       grid-area: p;
-//       margin-top: -50px;
-//     }
-//   }
-
-//   .blackBar1 {
-//     background: black;
-//     height: 20px;
-//     margin: 60px;
-//     width: 1375px;
-//   }
-// }
+@import "components/_mediaqueries.scss";
