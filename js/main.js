@@ -75,7 +75,7 @@ import ProfCard from "./components/TheProfCard.js";
             },
 
             showItemData(target) {
-                debugger;
+                // debugger;
                 //remove this item/prof from the professors array
                 console.log('clicked to view prof bio data', target, target.name);
 

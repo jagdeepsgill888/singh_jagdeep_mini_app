@@ -30,6 +30,9 @@ li {
   display: none;
 }
 
+h3 {
+  color: salmon;
+}
 // iframe {
 //   width: 1392px;
 // }
@@ -40,18 +43,56 @@ li {
 //   }
 // }
 
-.lineUp h3 {
-  padding-left: 46%;
-}
+@media screen and (min-width: 58em) {
+  .lineUp h3 {
+    padding-left: 46%;
+  }
 
-.carThumb {
-  width: 290px;
-  height: 145px;
-  padding: 40px;
-}
+  .cars {
+    padding-left: 150px;
+  }
 
-section.secImg img {
-  width: 1376px;
-  height: 370px;
-  margin-left: 60px;
+  .carThumb {
+    width: 290px;
+    height: 145px;
+    padding: 40px;
+  }
+
+  section.secImg img {
+    width: 1376px;
+    height: 370px;
+    margin-left: 60px;
+  }
+
+  .bioGrid {
+    display: grid;
+    margin-left: 25%;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "h1 img img"
+      "p img img";
+
+    img {
+      grid-area: img;
+      margin-top: 40px;
+    }
+    h1 {
+      grid-area: h1;
+      color: salmon;
+    }
+    p {
+      grid-area: p;
+      margin-top: -50px;
+    }
+  }
+
+  .blackBar1 {
+    background: black;
+    height: 20px;
+    margin: 60px;
+    width: 1375px;
+  }
 }

@@ -58,10 +58,14 @@
          </li> -->
      </ul>
 
+     <section class="blackBar1" ></section>
+
      <section class="bio-data" :class="{'show-bio': showBioData}">
+         <div class="bioGrid">
         <h1>{{ currentProfData.name }}</h1>
         <p> {{ currentProfData.about }}</p> 
         <img :src='"images/" + currentProfData.picture'></img>
+       </div>
        
         <!-- <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        -->
