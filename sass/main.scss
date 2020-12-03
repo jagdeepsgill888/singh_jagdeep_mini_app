@@ -1,0 +1,68 @@
+@import "components/_profsection.scss";
+@import "components/_nav.scss";
+
+#siteContainer {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.prof-button-modifier {
+  text-decoration: none;
+}
+
+.bio-data {
+  display: none;
+}
+
+.show-bio {
+  display: block !important;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+h3,
+h1 {
+  color: salmon;
+}
+
+.mobileLogo {
+  width: 200px;
+  margin-left: 20%;
+}
+
+.blackBar1 {
+  background: black;
+  height: 20px;
+  min-width: 375px;
+}
+
+ul.cars {
+  display: grid;
+}
+
+.carThumb {
+  width: 340px;
+  height: 120px;
+  // padding: 40px;
+}
+
+.secImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: url(../images/mini_below.jpg) center no-repeat;
+  min-height: 300px;
+  min-width: 375px;
+}
+
+@import "components/_mediaqueries.scss";

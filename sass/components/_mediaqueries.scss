@@ -1,0 +1,94 @@
+@media screen and (min-width: 30em) {
+  .mobileLogo {
+    width: 200px;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 58em) {
+  .mobileLogo {
+    display: none;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  .lineUp h3 {
+    padding-left: 46%;
+  }
+
+  ul.cars {
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "child1 child2 child3";
+
+    :nth-child(1) {
+      grid-area: child1;
+    }
+    :nth-child(2) {
+      grid-area: child2;
+    }
+    :nth-child(3) {
+      grid-area: child3;
+    }
+  }
+
+  .carThumb {
+    width: 190px;
+    height: 70px;
+    padding: 40px;
+  }
+
+  h2.thumbText {
+    font-size: 19px;
+    padding-left: 40px;
+  }
+
+  section.secImg img {
+    width: 1024px;
+    height: 370px;
+  }
+
+  .bioGrid {
+    display: grid;
+    margin-left: 90px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "h1 img img"
+      "p img img";
+
+    img {
+      grid-area: img;
+      margin-top: 100px;
+      padding-left: 40px;
+    }
+    h1 {
+      grid-area: h1;
+      color: salmon;
+    }
+    p {
+      grid-area: p;
+      margin-top: -50px;
+    }
+  }
+
+  .blackBar1 {
+    background: black;
+    height: 20px;
+    width: 1024px;
+  }
+
+  #secImg {
+    background: url(../images/mini_below.jpg) center no-repeat;
+    height: 300px;
+    width: 100%;
+  }
+}

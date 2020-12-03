@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Cooper App</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="siteContainer">
+    <main id="app">
+     
+     <header id="mainHeader">
+        <!-- <div id="logo"><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></div> -->
+        <img class="mobileLogo" src="images/mini_cooper.svg" alt="Mini Cooper Logo">
+        <section>
+            <iframe width="560" height="315":src="currentCarData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+
+        <div id="menuToggle"><button></button></div>
+        <nav id="mainNav"><h2 class="hidden">Main Navigation</h2>
+          <ul>
+            <li><a href="index.html">Models</a></li>
+             <li><a href="about.html">Tools</a></li>
+             <li><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></li>
+             <li><a href="project.html">Discover</a></li>
+             <li><a href="contact.html">Contact</a></li>
+          </ul></nav>
+
+    
+       </header>
+
+     
+     <!-- show the prof data in collection -->
+     <section class="lineUp"><h3>Our Line Up</h3></section>
+     <ul class="cars">
+         
+         <!-- this is a custom Vue component defined in main.js -->
+          <item-card @showmydata="showItemData" v-for="item in coopers" :item="item" :key="item.id"></item-card>
+
+     </ul>
+
+     <section class="blackBar1" ></section>
+
+     <section class="bio-data" :class="{'show-bio': showBioData}">
+         <div class="bioGrid">
+        <h1>{{ currentCarData.name }}</h1>
+        <p> {{ currentCarData.about }}</p> 
+        <img :src='"images/" + currentCarData.picture'></img>
+       </div>
+
+     </section>
+
+     <section class="secImg"></section>
+    </main>  
+    </div> 
+</body>
+<script src="js/main.js" type="module"> </script>
+</html>
