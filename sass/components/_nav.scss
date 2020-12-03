@@ -4,6 +4,7 @@
   justify-content: flex-start;
   background: grey;
   background: url(../images/hero_desktop.jpg) center no-repeat;
+  min-height: 300px;
 }
 
 #mainNav {
@@ -71,18 +72,9 @@
   transform: rotate(90deg);
 }
 
-.contactBtn {
-  display: flex;
-  text-decoration: none;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-
-  svg {
-    width: 80px;
-    :hover {
-      fill: salmon;
-    }
+#mainHeader {
+  section {
+    display: none;
   }
 }
 
@@ -164,7 +156,7 @@
   section {
     position: relative;
     z-index: 0;
-    margin-left: 33%;
-    margin-top: 8%;
+    margin-left: 28%;
+    margin-top: 10%;
   }
 }
