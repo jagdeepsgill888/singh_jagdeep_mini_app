@@ -11,9 +11,6 @@
 <body>
     <div id="siteContainer">
     <main id="app">
-     <!-- <h1 @click="clickHeader">{{ message }}</h1>
-     <p>{{ aontherMessage }}</p>
-     <span></span> -->
      
      <header id="mainHeader">
         <!-- <div id="logo"><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></div> -->
@@ -33,16 +30,8 @@
 
     
        </header>
-<!-- 
-       <section>
-        <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section> -->
 
-
-
-     <!-- this is a custom Vue component defined in main.js -->
-     <!-- <prof-card></prof-card> -->
      
-
      <!-- show the prof data in collection -->
      <section class="lineUp"><h3>Our Line Up</h3></section>
      <ul class="cars">
@@ -50,14 +39,6 @@
          <!-- this is a custom Vue component defined in main.js -->
           <prof-card @showmydata="showItemData" v-for="item in professors" :item="item" :key="item.id"></prof-card>
 
-         <!-- <li v-for="item, index in professors">
-             <p>Prof Name: {{ item.name }}, Role: {{ item.role }}</p>
-
-             <a href="" class="remove-prof" @click.prevent="showItemData(item)" v-bind:class="{'prof-button-modifier' : removeAformat}">show {{ item.name }}'s info</a>
-
-             <a href="" class="remove-prof" @click.prevent="removeItem(index)" v-bind:class="{'prof-button-modifier' : removeAformat}">Remove {{ item.name }}'s info</a>
-
-         </li> -->
      </ul>
 
      <section class="blackBar1" ></section>
@@ -68,9 +49,6 @@
         <p> {{ currentProfData.about }}</p> 
         <img :src='"images/" + currentProfData.picture'></img>
        </div>
-       
-        <!-- <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       -->
 
      </section>
 
