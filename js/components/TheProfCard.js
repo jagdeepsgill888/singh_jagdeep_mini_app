@@ -14,7 +14,7 @@ export default {
 
         template: `<li @click="logClicked">
             <img :src="'images/' + item.picture" :alt='item.name + " image"' class="carThumb">
-            <h2>{{ item.name }}</h2>
+            <h2 class="thumbText">{{ item.name }}</h2>
     
     
     

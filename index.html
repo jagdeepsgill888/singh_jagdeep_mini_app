@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div id="siteContainer">
     <main id="app">
      <!-- <h1 @click="clickHeader">{{ message }}</h1>
      <p>{{ aontherMessage }}</p>
@@ -16,8 +17,9 @@
      
      <header id="mainHeader">
         <!-- <div id="logo"><img src="images/mini_cooper.svg" alt="Mini Cooper Logo"></div> -->
+        <img class="mobileLogo" src="images/mini_cooper.svg" alt="Mini Cooper Logo">
         <section>
-            <iframe width="560" height="315" :src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+            <iframe width="560" height="315":src="currentProfData.youtubeid" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
 
         <div id="menuToggle"><button></button></div>
         <nav id="mainNav"><h2 class="hidden">Main Navigation</h2>
@@ -73,7 +75,8 @@
      </section>
 
      <section class="secImg"><img src="images/mini_below.jpg" alt=""></section>
-    </main>   
+    </main>  
+    </div> 
 </body>
 <script src="js/main.js" type="module"> </script>
 </html>

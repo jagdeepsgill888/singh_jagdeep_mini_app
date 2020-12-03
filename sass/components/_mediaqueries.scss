@@ -1,0 +1,72 @@
+@media screen and (min-width: 30em) {
+  .mobileLogo {
+    width: 200px;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 58em) {
+  .mobileLogo {
+    display: none;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  .lineUp h3 {
+    padding-left: 46%;
+  }
+
+  .cars {
+    padding-left: 80px;
+  }
+
+  .carThumb {
+    width: 190px;
+    height: 70px;
+    padding: 40px;
+  }
+
+  h2.thumbText {
+    font-size: 19px;
+    padding-left: 40px;
+  }
+
+  section.secImg img {
+    width: 1024px;
+    height: 370px;
+  }
+
+  .bioGrid {
+    display: grid;
+    margin-left: 25%;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "h1 img img"
+      "p img img";
+
+    img {
+      grid-area: img;
+      margin-top: 40px;
+    }
+    h1 {
+      grid-area: h1;
+      color: salmon;
+    }
+    p {
+      grid-area: p;
+      margin-top: -50px;
+    }
+  }
+
+  .blackBar1 {
+    background: black;
+    height: 20px;
+    width: 1024px;
+  }
+}
