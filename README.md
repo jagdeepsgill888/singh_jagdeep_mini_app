@@ -19,7 +19,7 @@ install Vue Chrome plugin : https://chrome.google.com/webstore/detail/vuejs-devt
 ## Where is the Data?
 
 It is in the "includes\mini_cooper_db.sql".
-Please grab it from there and place it in your wamp/mamp directory.
+Please grab it from there and place it in your respective directory.
 
 ## Author
 
