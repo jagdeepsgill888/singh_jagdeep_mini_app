@@ -1,5 +1,5 @@
 export default {
-        name:"TheProfCard",
+        name:"TheItemCard",
         props: ["item"],
 
 

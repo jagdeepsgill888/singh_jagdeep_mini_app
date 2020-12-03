@@ -1,29 +1,8 @@
 import { fetchData } from "./components/DataMiner.js";
-import ProfCard from "./components/TheProfCard.js";
+import ItemCard from "./components/TheItemCard.js";
 
 
 (() => {
-
-// Vue.component("prof-card", {
-//     props: ["item"],
-//     template: `<li>
-//         <img :src="'images/' + item.avatar" :alt='item.name + " image"'>
-//         <p>Prof Name: {{ item.name }}</p>
-
-//         <a href="" class="remove-prof"> Show {{ item.name }}'s info</a>
-
-//          <a href="" class="remove-prof">Remove {{ item.name }}</a>
-
-//       </li>`,
-
-//     created: function() {
-//         console.log(`Created ${this.item.name}'s card`);
-//     }
-// });
-
-
-
-
 
 
 // const myVM = ( () => {
@@ -36,14 +15,9 @@ import ProfCard from "./components/TheProfCard.js";
             aontherMessage: "This is some sample text",
             removeAformat: true,
             showBioData: false,
-            professors: [],
-            currentProfData: {}
+            coopers: [],
+            currentCarData: {}
 
-            // professors: [
-            //     { name: "Justin", role: "coordinator", nickname: "nitsuj"},
-            //     { name: "John", role: "prof", nickname: "super chill"},
-            //     { name: "Joe", role: "prof", nickname: "tedy bear"}
-            // ]
         },
 
         // this is the "mounted" lifecycle hook. Vue is done creating itself, and has attached itself to the "app" div on the page
@@ -53,8 +27,8 @@ import ProfCard from "./components/TheProfCard.js";
 
               fetchData("./includes/index.php")
               .then(data => {
-                  data.forEach(item => this.professors.push(item));
-                 this.professors = data
+                  data.forEach(item => this.coopers.push(item));
+                 this.coopers = data
                 })
               .catch(err => console.error(err));
 
@@ -76,7 +50,7 @@ import ProfCard from "./components/TheProfCard.js";
 
             showItemData(target) {
                 // debugger;
-                //remove this item/prof from the professors array
+                //remove this item/prof from the cooper array
                 console.log('clicked to view prof bio data', target, target.name);
 
                 // the "this" keyword inside a vus instance refers tot he vue intance itself by default
@@ -85,24 +59,24 @@ import ProfCard from "./components/TheProfCard.js";
                 this.showBioData = this.showBioData ? false : true
 
                 // make the selected prof's data visable
-                this.currentProfData = target;
-                // this.currentProfData.iframe.src = currentProfData.youtubeid;
+                this.currentCarData = target;
+                // this.currentCarData.iframe.src = currentCarData.youtubeid;
             },
 
             removeItem(target) {
-                //remove this item/prof from the professors array
-                console.log('clicked to remove prof', target, target.name);
+                //remove this item/prof from the cooper array
+                console.log('clicked to remove item', target, target.name);
 
                 // make the selected prof's data visable
-                // this.professors.splice(this.professors.indexOf(target), 1);
-                this.$delete(this.professors, target);
+                // this.coopers.splice(this.coopers.indexOf(target), 1);
+                this.$delete(this.coopers, target);
             }
 
 
         },
 
         components: {
-            "prof-card": ProfCard
+            "item-card": ItemCard
         }
 
     }).$mount("#app"); // also connects Vue to your wrapper in HTML
